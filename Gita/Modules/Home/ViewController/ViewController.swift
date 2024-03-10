@@ -8,13 +8,18 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    var viewModel = HomeViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.viewModel.loadChaptes(fileName: "chapters")
     }
     
 
-
+    @IBAction func buttonHandler(_ sender: Any) {
+        self.viewModel.loadChaptes(fileName: "chapters")
+    }
+    
 }
 

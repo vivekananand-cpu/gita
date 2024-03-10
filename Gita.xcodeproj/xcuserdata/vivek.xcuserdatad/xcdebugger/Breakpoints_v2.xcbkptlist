@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ED04EAFC-572D-44E6-844B-468DDB4DD3F4"
+            uuid = "1F38AA82-F34B-4304-91D7-4FC9405B3F68"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Gita/Modules/Home/ViewController/ViewController.swift"
+            filePath = "Gita/Modules/Home/ViewModel/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "loadChaptes(fileName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

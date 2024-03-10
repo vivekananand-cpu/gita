@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E22AF6592B9D8414005EF18C /* chapters.json in Resources */ = {isa = PBXBuildFile; fileRef = E22AF6582B9D8414005EF18C /* chapters.json */; };
+		E2414A3F2B9D84D2008835C2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A3E2B9D84D2008835C2 /* HomeViewModel.swift */; };
+		E2414A412B9D87E1008835C2 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A402B9D87E1008835C2 /* Chapter.swift */; };
+		E2414A442B9D8C6D008835C2 /* commonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A432B9D8C6D008835C2 /* commonFunctions.swift */; };
 		E2DC09CA2B9D6745005F42CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09C92B9D6745005F42CC /* AppDelegate.swift */; };
 		E2DC09CC2B9D6745005F42CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09CB2B9D6745005F42CC /* SceneDelegate.swift */; };
 		E2DC09CE2B9D6745005F42CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09CD2B9D6745005F42CC /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		E22AF6582B9D8414005EF18C /* chapters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chapters.json; sourceTree = "<group>"; };
+		E2414A3E2B9D84D2008835C2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E2414A402B9D87E1008835C2 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		E2414A432B9D8C6D008835C2 /* commonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commonFunctions.swift; sourceTree = "<group>"; };
 		E2DC09C62B9D6745005F42CC /* Gita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DC09C92B9D6745005F42CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DC09CB2B9D6745005F42CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 		E22AF6542B9D80E0005EF18C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E2414A3E2B9D84D2008835C2 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 		E22AF6552B9D80F1005EF18C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2414A402B9D87E1008835C2 /* Chapter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +143,14 @@
 				E22AF6582B9D8414005EF18C /* chapters.json */,
 			);
 			path = JsonData;
+			sourceTree = "<group>";
+		};
+		E2414A422B9D8C49008835C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E2414A432B9D8C6D008835C2 /* commonFunctions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		E2DC09BD2B9D6744005F42CC = {
@@ -160,6 +176,7 @@
 		E2DC09C82B9D6745005F42CC /* Gita */ = {
 			isa = PBXGroup;
 			children = (
+				E2414A422B9D8C49008835C2 /* Common */,
 				E22AF6572B9D83C8005EF18C /* JsonData */,
 				E22AF6512B9D80AB005EF18C /* Modules */,
 				E2DC09C92B9D6745005F42CC /* AppDelegate.swift */,
@@ -322,8 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DC09CE2B9D6745005F42CC /* ViewController.swift in Sources */,
+				E2414A442B9D8C6D008835C2 /* commonFunctions.swift in Sources */,
 				E2DC09CA2B9D6745005F42CC /* AppDelegate.swift in Sources */,
 				E2DC09D42B9D6745005F42CC /* Gita.xcdatamodeld in Sources */,
+				E2414A412B9D87E1008835C2 /* Chapter.swift in Sources */,
+				E2414A3F2B9D84D2008835C2 /* HomeViewModel.swift in Sources */,
 				E2DC09CC2B9D6745005F42CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
