@@ -12,7 +12,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var labelChapterName: UILabel!
     var chapter: Chapter? {
         didSet {
-            labelChapterName.text = chapter?.name
+            labelChapterName.text = "\(chapter?.id ?? 0). \(chapter?.nameTranslated ?? "")"
         }
     }
     override func awakeFromNib() {

@@ -12,15 +12,22 @@ protocol HomeViewModelProtocol {
     
     func performApiCallGetAllChapters()
     var closureReloadTable: (() -> Void)? {get set}
+    var startLoading: (() -> Void)? {get set}
+    var stopLoading: (() -> Void)? {get set}
     
 }
 
 class HomeViewModel: HomeViewModelProtocol {
+    var startLoading: (() -> Void)?
+    
+    var stopLoading: (() -> Void)?
+    
     var closureReloadTable: (() -> Void)?
     
     var arrayChaptersPO: [Chapter]?
 
     func performApiCallGetAllChapters() {
+        startLoading?()
         let url = URL(string: "https://bhagavad-gita3.p.rapidapi.com/v2/chapters/?limit=18")!
         let headers: [String:String] = [
             "X-RapidAPI-Key": "6b17d3fa4bmshd110cbb51f0e639p1f8c95jsn08f2f187b65f",
@@ -28,6 +35,7 @@ class HomeViewModel: HomeViewModelProtocol {
         ]
 
         DataMediator.shared.fetchData(from: url, type: [Chapter].self, headers: headers) { result in
+            self.stopLoading?()
             switch result {
             case .success(let data):
                 self.arrayChaptersPO = data
