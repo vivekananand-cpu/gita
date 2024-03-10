@@ -15,6 +15,7 @@
 		E2574C682B9DD9F700739351 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2574C662B9DD9F700739351 /* HomeTableViewCell.swift */; };
 		E2574C692B9DD9F700739351 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */; };
 		E2574C6B2B9DDDF600739351 /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2574C6A2B9DDDF600739351 /* Subscript.swift */; };
+		E2574C6D2B9DF48800739351 /* ChapterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2574C6C2B9DF48800739351 /* ChapterDetailsViewController.swift */; };
 		E2DC09CA2B9D6745005F42CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09C92B9D6745005F42CC /* AppDelegate.swift */; };
 		E2DC09CC2B9D6745005F42CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09CB2B9D6745005F42CC /* SceneDelegate.swift */; };
 		E2DC09CE2B9D6745005F42CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09CD2B9D6745005F42CC /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 		E2574C662B9DD9F700739351 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		E2574C6A2B9DDDF600739351 /* Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
+		E2574C6C2B9DF48800739351 /* ChapterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailsViewController.swift; sourceTree = "<group>"; };
 		E2DC09C62B9D6745005F42CC /* Gita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DC09C92B9D6745005F42CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DC09CB2B9D6745005F42CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				E2DC09CD2B9D6745005F42CC /* ViewController.swift */,
+				E2574C6C2B9DF48800739351 /* ChapterDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				E2414A412B9D87E1008835C2 /* Chapter.swift in Sources */,
 				E2574C682B9DD9F700739351 /* HomeTableViewCell.swift in Sources */,
 				E2414A3F2B9D84D2008835C2 /* HomeViewModel.swift in Sources */,
+				E2574C6D2B9DF48800739351 /* ChapterDetailsViewController.swift in Sources */,
 				E2DC09CC2B9D6745005F42CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

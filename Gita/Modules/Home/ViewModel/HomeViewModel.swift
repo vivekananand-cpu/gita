@@ -54,4 +54,8 @@ class HomeViewModel: HomeViewModelProtocol {
     func getChapterForRow(row: Int) -> Chapter? {
         self.arrayChaptersPO?[safe: row]
     }
+    
+    func getChapterId(row: Int) -> Int {
+        self.arrayChaptersPO?[safe: row]?.id ?? 0
+    }
 }

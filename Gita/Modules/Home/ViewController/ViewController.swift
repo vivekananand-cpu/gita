@@ -41,6 +41,12 @@ class HomeViewController: UIViewController {
         }
     }
     
+    func pushToChaptersDetails(chapterId: Int) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let chapterDetailsVC = storyBoard.instantiateViewController(identifier: String(describing: ChapterDetailsViewController.self))
+        self.navigationController?.pushViewController(chapterDetailsVC, animated: true)
+    }
+    
 }
 
 
@@ -61,6 +67,10 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.pushToChaptersDetails(chapterId: self.viewModel.getChapterId(row: indexPath.row))
     }
     
 }
