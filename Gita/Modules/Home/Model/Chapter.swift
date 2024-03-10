@@ -8,70 +8,39 @@
 import Foundation
 
 struct Chapter: Codable {
-    let chapterNumber : Int?
-    let versesCount : Int?
-    let name : String?
-    let translation : String?
-    let transliteration : String?
-    let meaning : Meaning?
-    let summary : Summary?
-
+    let id: Int
+    let name: String
+    let nameTransliterated: String
+    let nameTranslated: String
+    let versesCount: Int
+    let chapterNumber: Int
+    let nameMeaning: String
+    let chapterSummary: String
+    
     enum CodingKeys: String, CodingKey {
-
-        case chapterNumber = "chapter_number"
-        case versesCount = "verses_count"
+        case id = "id"
         case name = "name"
-        case translation = "translation"
-        case transliteration = "transliteration"
-        case meaning = "meaning"
-        case summary = "summary"
+        case nameTransliterated = "name_transliterated"
+        case nameTranslated = "name_translated"
+        case versesCount = "verses_count"
+        case chapterNumber = "chapter_number"
+        case nameMeaning = "name_meaning"
+        case chapterSummary = "chapter_summary"
     }
-
+    
     init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        chapterNumber = try values.decodeIfPresent(Int.self, forKey: .chapterNumber)
-        versesCount = try values.decodeIfPresent(Int.self, forKey: .versesCount)
-        name = try values.decodeIfPresent(String.self, forKey: .name)
-        translation = try values.decodeIfPresent(String.self, forKey: .translation)
-        transliteration = try values.decodeIfPresent(String.self, forKey: .transliteration)
-        meaning = try values.decodeIfPresent(Meaning.self, forKey: .meaning)
-        summary = try values.decodeIfPresent(Summary.self, forKey: .summary)
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.nameTransliterated = try container.decode(String.self, forKey: .nameTransliterated)
+        self.nameTranslated = try container.decode(String.self, forKey: .nameTranslated)
+        self.versesCount = try container.decode(Int.self, forKey: .versesCount)
+        self.chapterNumber = try container.decode(Int.self, forKey: .chapterNumber)
+        self.nameMeaning = try container.decode(String.self, forKey: .nameMeaning)
+        self.chapterSummary = try container.decode(String.self, forKey: .chapterSummary)
     }
-
 }
 
-struct Meaning : Codable {
-    let english : String?
-    let hindi : String?
 
-    enum CodingKeys: String, CodingKey {
 
-        case english = "en"
-        case hindi = "hi"
-    }
 
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        english = try values.decodeIfPresent(String.self, forKey: .english)
-        hindi = try values.decodeIfPresent(String.self, forKey: .hindi)
-    }
-
-}
-
-struct Summary : Codable {
-    let english : String?
-    let hindi : String?
-
-    enum CodingKeys: String, CodingKey {
-
-        case english = "en"
-        case hindi = "hi"
-    }
-
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        english = try values.decodeIfPresent(String.self, forKey: .english)
-        hindi = try values.decodeIfPresent(String.self, forKey: .hindi)
-    }
-
-}

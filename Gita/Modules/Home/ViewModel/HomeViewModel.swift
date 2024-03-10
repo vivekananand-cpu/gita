@@ -9,14 +9,41 @@ import Foundation
 
 protocol HomeViewModelProtocol {
     var arrayChaptersPO: [Chapter]? {get set}
-    func loadChaptes(fileName: String)
+    
+    func performApiCallGetAllChapters()
+    var closureReloadTable: (() -> Void)? {get set}
+    
 }
 
 class HomeViewModel: HomeViewModelProtocol {
-    var arrayChaptersPO: [Chapter]?
+    var closureReloadTable: (() -> Void)?
     
-    func loadChaptes(fileName: String) {
-        self.arrayChaptersPO = loadJson(fileName: fileName, type: [Chapter].self)
+    var arrayChaptersPO: [Chapter]?
+
+    func performApiCallGetAllChapters() {
+        let url = URL(string: "https://bhagavad-gita3.p.rapidapi.com/v2/chapters/?limit=18")!
+        let headers: [String:String] = [
+            "X-RapidAPI-Key": "6b17d3fa4bmshd110cbb51f0e639p1f8c95jsn08f2f187b65f",
+            "X-RapidAPI-Host": "bhagavad-gita3.p.rapidapi.com"
+        ]
+
+        DataMediator.shared.fetchData(from: url, type: [Chapter].self, headers: headers) { result in
+            switch result {
+            case .success(let data):
+                self.arrayChaptersPO = data
+                self.closureReloadTable?()
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
+
+    func getNumberOfRowsInSection() -> Int {
+        self.arrayChaptersPO?.count ?? 0
+    }
+    
+    func getChapterForRow(row: Int) -> Chapter? {
+        self.arrayChaptersPO?[safe: row]
+    }
 }
