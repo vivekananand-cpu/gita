@@ -7,17 +7,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D2382C12-4532-4359-92A1-D3EAFB08EF0C"
+            uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Gita/Modules/Home/View/TableViewCells/HomeTableViewCell.swift"
+            filePath = "Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "chapter"
-            landmarkType = "24">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "buttonHandlerReadVerses(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864 - 2951bcdb1661d970"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gita.ChapterDetailsViewController.buttonHandlerReadVerses(__C.UIButton) -&gt; ()"
+                  moduleName = "Gita"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivek/Documents/Projects/Gita/Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864 - 2951bcdb1661d970"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gita.ChapterDetailsViewController.buttonHandlerReadVerses(__C.UIButton) -&gt; ()"
+                  moduleName = "Gita"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivek/Documents/Projects/Gita/Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864 - 2951bcdb1661d970"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gita.ChapterDetailsViewController.buttonHandlerReadVerses(__C.UIButton) -&gt; ()"
+                  moduleName = "Gita"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivek/Documents/Projects/Gita/Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CA4AEF1-582A-46B4-B283-82BDE298E7A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "setupView()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

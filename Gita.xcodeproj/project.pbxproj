@@ -12,6 +12,12 @@
 		E2414A412B9D87E1008835C2 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A402B9D87E1008835C2 /* Chapter.swift */; };
 		E2414A442B9D8C6D008835C2 /* commonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A432B9D8C6D008835C2 /* commonFunctions.swift */; };
 		E2414A472B9D91CF008835C2 /* DataMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A462B9D91CF008835C2 /* DataMediator.swift */; };
+		E25747022B9E9D0200B5D9D6 /* ChapterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747012B9E9D0200B5D9D6 /* ChapterDetailsViewModel.swift */; };
+		E25747042B9E9D8700B5D9D6 /* ChapterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747032B9E9D8700B5D9D6 /* ChapterDetail.swift */; };
+		E25747072B9EB16600B5D9D6 /* ChapterDeatailHeadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747052B9EB16600B5D9D6 /* ChapterDeatailHeadingTableViewCell.swift */; };
+		E25747082B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25747062B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib */; };
+		E257470A2B9EB3C300B5D9D6 /* ChapterDetailPO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747092B9EB3C300B5D9D6 /* ChapterDetailPO.swift */; };
+		E257470C2B9EE07100B5D9D6 /* VersesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257470B2B9EE07100B5D9D6 /* VersesListViewController.swift */; };
 		E2574C682B9DD9F700739351 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2574C662B9DD9F700739351 /* HomeTableViewCell.swift */; };
 		E2574C692B9DD9F700739351 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */; };
 		E2574C6B2B9DDDF600739351 /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2574C6A2B9DDDF600739351 /* Subscript.swift */; };
@@ -51,6 +57,12 @@
 		E2414A402B9D87E1008835C2 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		E2414A432B9D8C6D008835C2 /* commonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commonFunctions.swift; sourceTree = "<group>"; };
 		E2414A462B9D91CF008835C2 /* DataMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMediator.swift; sourceTree = "<group>"; };
+		E25747012B9E9D0200B5D9D6 /* ChapterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailsViewModel.swift; sourceTree = "<group>"; };
+		E25747032B9E9D8700B5D9D6 /* ChapterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetail.swift; sourceTree = "<group>"; };
+		E25747052B9EB16600B5D9D6 /* ChapterDeatailHeadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDeatailHeadingTableViewCell.swift; sourceTree = "<group>"; };
+		E25747062B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterDetailHeadingTableViewCell.xib; sourceTree = "<group>"; };
+		E25747092B9EB3C300B5D9D6 /* ChapterDetailPO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailPO.swift; sourceTree = "<group>"; };
+		E257470B2B9EE07100B5D9D6 /* VersesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersesListViewController.swift; sourceTree = "<group>"; };
 		E2574C662B9DD9F700739351 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		E2574C6A2B9DDDF600739351 /* Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
@@ -128,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E2414A3E2B9D84D2008835C2 /* HomeViewModel.swift */,
+				E25747012B9E9D0200B5D9D6 /* ChapterDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -136,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				E2414A402B9D87E1008835C2 /* Chapter.swift */,
+				E25747032B9E9D8700B5D9D6 /* ChapterDetail.swift */,
+				E25747092B9EB3C300B5D9D6 /* ChapterDetailPO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +160,7 @@
 			children = (
 				E2DC09CD2B9D6745005F42CC /* ViewController.swift */,
 				E2574C6C2B9DF48800739351 /* ChapterDetailsViewController.swift */,
+				E257470B2B9EE07100B5D9D6 /* VersesListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -179,6 +195,8 @@
 			children = (
 				E2574C662B9DD9F700739351 /* HomeTableViewCell.swift */,
 				E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */,
+				E25747052B9EB16600B5D9D6 /* ChapterDeatailHeadingTableViewCell.swift */,
+				E25747062B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -344,6 +362,7 @@
 				E2DC09D92B9D6746005F42CC /* LaunchScreen.storyboard in Resources */,
 				E2DC09D62B9D6746005F42CC /* Assets.xcassets in Resources */,
 				E2DC09D12B9D6745005F42CC /* Main.storyboard in Resources */,
+				E25747082B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib in Resources */,
 				E2574C692B9DD9F700739351 /* HomeTableViewCell.xib in Resources */,
 				E22AF6592B9D8414005EF18C /* chapters.json in Resources */,
 			);
@@ -371,13 +390,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DC09CE2B9D6745005F42CC /* ViewController.swift in Sources */,
+				E25747022B9E9D0200B5D9D6 /* ChapterDetailsViewModel.swift in Sources */,
 				E2414A442B9D8C6D008835C2 /* commonFunctions.swift in Sources */,
 				E2DC09CA2B9D6745005F42CC /* AppDelegate.swift in Sources */,
 				E2574C6B2B9DDDF600739351 /* Subscript.swift in Sources */,
 				E2DC09D42B9D6745005F42CC /* Gita.xcdatamodeld in Sources */,
+				E25747042B9E9D8700B5D9D6 /* ChapterDetail.swift in Sources */,
+				E25747072B9EB16600B5D9D6 /* ChapterDeatailHeadingTableViewCell.swift in Sources */,
 				E2414A472B9D91CF008835C2 /* DataMediator.swift in Sources */,
+				E257470A2B9EB3C300B5D9D6 /* ChapterDetailPO.swift in Sources */,
 				E2414A412B9D87E1008835C2 /* Chapter.swift in Sources */,
 				E2574C682B9DD9F700739351 /* HomeTableViewCell.swift in Sources */,
+				E257470C2B9EE07100B5D9D6 /* VersesListViewController.swift in Sources */,
 				E2414A3F2B9D84D2008835C2 /* HomeViewModel.swift in Sources */,
 				E2574C6D2B9DF48800739351 /* ChapterDetailsViewController.swift in Sources */,
 				E2DC09CC2B9D6745005F42CC /* SceneDelegate.swift in Sources */,

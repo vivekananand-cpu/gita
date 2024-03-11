@@ -62,6 +62,33 @@
             </objects>
             <point key="canvasLocation" x="1434.3511450381679" y="717.6056338028169"/>
         </scene>
+        <!--Verses List View Controller-->
+        <scene sceneID="dEA-q7-WMF">
+            <objects>
+                <viewController storyboardIdentifier="VersesListViewController" id="4ax-nW-Fib" customClass="VersesListViewController" customModule="Gita" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A1o-wb-WIn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="abk-ha-PAH">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oXA-lP-rsp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="abk-ha-PAH" firstAttribute="top" secondItem="oXA-lP-rsp" secondAttribute="top" id="KoM-zW-WUe"/>
+                            <constraint firstItem="abk-ha-PAH" firstAttribute="leading" secondItem="oXA-lP-rsp" secondAttribute="leading" id="gXg-OI-lCb"/>
+                            <constraint firstItem="oXA-lP-rsp" firstAttribute="trailing" secondItem="abk-ha-PAH" secondAttribute="trailing" id="lmK-TC-70f"/>
+                            <constraint firstItem="oXA-lP-rsp" firstAttribute="bottom" secondItem="abk-ha-PAH" secondAttribute="bottom" id="s1p-BF-K9v"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBc-gv-6RG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2397" y="698"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2hL-Cw-ThA">
             <objects>
@@ -88,9 +115,37 @@
                     <view key="view" contentMode="scaleToFill" id="HTp-fu-7ZU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CSk-54-NE5">
+                                <rect key="frame" x="0.0" y="59" width="393" height="679"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BV-n0-6SO">
+                                <rect key="frame" x="20" y="750" width="353" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <action selector="buttonHandlerReadVerses:" destination="SZD-KT-gX2" eventType="touchUpInside" id="HwC-ub-3v2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lqW-5r-5XM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8BV-n0-6SO" firstAttribute="leading" secondItem="lqW-5r-5XM" secondAttribute="leading" constant="20" id="Dud-l3-cjj"/>
+                            <constraint firstItem="lqW-5r-5XM" firstAttribute="trailing" secondItem="8BV-n0-6SO" secondAttribute="trailing" constant="20" id="F7M-AA-X6h"/>
+                            <constraint firstItem="lqW-5r-5XM" firstAttribute="trailing" secondItem="CSk-54-NE5" secondAttribute="trailing" id="WeY-j2-ywK"/>
+                            <constraint firstItem="8BV-n0-6SO" firstAttribute="top" secondItem="CSk-54-NE5" secondAttribute="bottom" constant="12" id="Xbk-kL-4xX"/>
+                            <constraint firstItem="CSk-54-NE5" firstAttribute="leading" secondItem="lqW-5r-5XM" secondAttribute="leading" id="bGl-9P-ddp"/>
+                            <constraint firstItem="lqW-5r-5XM" firstAttribute="bottom" secondItem="8BV-n0-6SO" secondAttribute="bottom" constant="12" id="gnb-1O-3T7"/>
+                            <constraint firstItem="lqW-5r-5XM" firstAttribute="bottom" secondItem="CSk-54-NE5" secondAttribute="bottom" constant="80" id="sWc-VB-Ygm"/>
+                            <constraint firstItem="CSk-54-NE5" firstAttribute="top" secondItem="lqW-5r-5XM" secondAttribute="top" id="wjH-Wd-IoE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonReadVerses" destination="8BV-n0-6SO" id="wUg-qP-Ord"/>
+                        <outlet property="tableView" destination="CSk-54-NE5" id="e2J-SN-WtU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5W-vx-LWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

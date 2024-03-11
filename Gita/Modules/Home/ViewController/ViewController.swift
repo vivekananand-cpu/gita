@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     
     func setupView() {
         self.title = "Chapters"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func setupTableView() {
@@ -41,9 +42,13 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func pushToChaptersDetails(chapterId: Int) {
+    func pushToChaptersDetails(row: Int) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let chapterDetailsVC = storyBoard.instantiateViewController(identifier: String(describing: ChapterDetailsViewController.self))
+        let chapterDetailsVC = storyBoard.instantiateViewController(identifier: String(describing: ChapterDetailsViewController.self)) as! ChapterDetailsViewController
+        if let chapter = self.viewModel.getChapterForRow(row: row) {
+            chapterDetailsVC.viewModel = ChapterDetailsViewModel(chapter: chapter)
+        }
+        
         self.navigationController?.pushViewController(chapterDetailsVC, animated: true)
     }
     
@@ -70,7 +75,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.pushToChaptersDetails(chapterId: self.viewModel.getChapterId(row: indexPath.row))
+        self.pushToChaptersDetails(row: indexPath.row)
     }
     
 }
