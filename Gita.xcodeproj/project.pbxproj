@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E22AF6592B9D8414005EF18C /* chapters.json in Resources */ = {isa = PBXBuildFile; fileRef = E22AF6582B9D8414005EF18C /* chapters.json */; };
 		E2414A3F2B9D84D2008835C2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A3E2B9D84D2008835C2 /* HomeViewModel.swift */; };
 		E2414A412B9D87E1008835C2 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A402B9D87E1008835C2 /* Chapter.swift */; };
 		E2414A442B9D8C6D008835C2 /* commonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2414A432B9D8C6D008835C2 /* commonFunctions.swift */; };
@@ -61,7 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E22AF6582B9D8414005EF18C /* chapters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chapters.json; sourceTree = "<group>"; };
 		E2414A3E2B9D84D2008835C2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E2414A402B9D87E1008835C2 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		E2414A432B9D8C6D008835C2 /* commonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commonFunctions.swift; sourceTree = "<group>"; };
@@ -186,14 +184,6 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		E22AF6572B9D83C8005EF18C /* JsonData */ = {
-			isa = PBXGroup;
-			children = (
-				E22AF6582B9D8414005EF18C /* chapters.json */,
-			);
-			path = JsonData;
-			sourceTree = "<group>";
-		};
 		E2414A422B9D8C49008835C2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,7 +243,6 @@
 			children = (
 				E2414A452B9D91B7008835C2 /* DataMediator */,
 				E2414A422B9D8C49008835C2 /* Common */,
-				E22AF6572B9D83C8005EF18C /* JsonData */,
 				E22AF6512B9D80AB005EF18C /* Modules */,
 				E2DC09C92B9D6745005F42CC /* AppDelegate.swift */,
 				E2DC09CB2B9D6745005F42CC /* SceneDelegate.swift */,
@@ -391,7 +380,6 @@
 				E2DC09D12B9D6745005F42CC /* Main.storyboard in Resources */,
 				E25747082B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib in Resources */,
 				E2574C692B9DD9F700739351 /* HomeTableViewCell.xib in Resources */,
-				E22AF6592B9D8414005EF18C /* chapters.json in Resources */,
 				E257471C2B9EEB8600B5D9D6 /* VerseTableViewCell.xib in Resources */,
 				E25747182B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.xib in Resources */,
 				E25747142B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.xib in Resources */,
