@@ -7,79 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864"
-            shouldBeEnabled = "Yes"
+            uuid = "92AE80DA-3BFC-4EE5-AEA1-FEEF6986B8AF"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
+            filePath = "Gita/Modules/Home/ViewModel/VersesListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "buttonHandlerReadVerses(_:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "performAPICallGetVersesOfChapter()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864 - 2951bcdb1661d970"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Gita.ChapterDetailsViewController.buttonHandlerReadVerses(__C.UIButton) -&gt; ()"
-                  moduleName = "Gita"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vivek/Documents/Projects/Gita/Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "96">
-               </Location>
-               <Location
-                  uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864 - 2951bcdb1661d970"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Gita.ChapterDetailsViewController.buttonHandlerReadVerses(__C.UIButton) -&gt; ()"
-                  moduleName = "Gita"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vivek/Documents/Projects/Gita/Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "01C4F19F-6CE3-4D23-AAD2-949707816864 - 2951bcdb1661d970"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Gita.ChapterDetailsViewController.buttonHandlerReadVerses(__C.UIButton) -&gt; ()"
-                  moduleName = "Gita"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vivek/Documents/Projects/Gita/Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7CA4AEF1-582A-46B4-B283-82BDE298E7A6"
+            uuid = "D2D5B027-B20F-4E94-A362-88ACC1067714"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Gita/Modules/Home/ViewController/ChapterDetailsViewController.swift"
+            filePath = "Gita/Modules/Home/ViewModel/VersesListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "setupView()"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "performAPICallGetVersesOfChapter()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

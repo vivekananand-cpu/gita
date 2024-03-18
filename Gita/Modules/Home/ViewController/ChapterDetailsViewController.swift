@@ -33,6 +33,11 @@ class ChapterDetailsViewController: UIViewController {
     }
 
     @IBAction func buttonHandlerReadVerses(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let versesVC = storyBoard.instantiateViewController(identifier: String(describing: VersesListViewController.self)) as! VersesListViewController
+        versesVC.viewModel = VersesListViewModel(chapterID: self.viewModel.chapter?.id ?? 0)
+        
+        self.navigationController?.pushViewController(versesVC, animated: true)
     }
 }
 

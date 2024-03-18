@@ -18,6 +18,15 @@
 		E25747082B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25747062B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib */; };
 		E257470A2B9EB3C300B5D9D6 /* ChapterDetailPO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747092B9EB3C300B5D9D6 /* ChapterDetailPO.swift */; };
 		E257470C2B9EE07100B5D9D6 /* VersesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257470B2B9EE07100B5D9D6 /* VersesListViewController.swift */; };
+		E257470E2B9EE19200B5D9D6 /* VersesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257470D2B9EE19200B5D9D6 /* VersesListViewModel.swift */; };
+		E25747102B9EE42100B5D9D6 /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257470F2B9EE42100B5D9D6 /* Verse.swift */; };
+		E25747132B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747112B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.swift */; };
+		E25747142B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25747122B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.xib */; };
+		E25747172B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747152B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.swift */; };
+		E25747182B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25747162B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.xib */; };
+		E257471B2B9EEB8600B5D9D6 /* VerseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25747192B9EEB8600B5D9D6 /* VerseTableViewCell.swift */; };
+		E257471C2B9EEB8600B5D9D6 /* VerseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E257471A2B9EEB8600B5D9D6 /* VerseTableViewCell.xib */; };
+		E257471E2B9EF07800B5D9D6 /* VersePO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257471D2B9EF07800B5D9D6 /* VersePO.swift */; };
 		E2574C682B9DD9F700739351 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2574C662B9DD9F700739351 /* HomeTableViewCell.swift */; };
 		E2574C692B9DD9F700739351 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */; };
 		E2574C6B2B9DDDF600739351 /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2574C6A2B9DDDF600739351 /* Subscript.swift */; };
@@ -63,6 +72,15 @@
 		E25747062B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterDetailHeadingTableViewCell.xib; sourceTree = "<group>"; };
 		E25747092B9EB3C300B5D9D6 /* ChapterDetailPO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailPO.swift; sourceTree = "<group>"; };
 		E257470B2B9EE07100B5D9D6 /* VersesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersesListViewController.swift; sourceTree = "<group>"; };
+		E257470D2B9EE19200B5D9D6 /* VersesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersesListViewModel.swift; sourceTree = "<group>"; };
+		E257470F2B9EE42100B5D9D6 /* Verse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verse.swift; sourceTree = "<group>"; };
+		E25747112B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		E25747122B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerseHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		E25747152B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseTitleTableViewCell.swift; sourceTree = "<group>"; };
+		E25747162B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerseTitleTableViewCell.xib; sourceTree = "<group>"; };
+		E25747192B9EEB8600B5D9D6 /* VerseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseTableViewCell.swift; sourceTree = "<group>"; };
+		E257471A2B9EEB8600B5D9D6 /* VerseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerseTableViewCell.xib; sourceTree = "<group>"; };
+		E257471D2B9EF07800B5D9D6 /* VersePO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersePO.swift; sourceTree = "<group>"; };
 		E2574C662B9DD9F700739351 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		E2574C6A2B9DDDF600739351 /* Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
@@ -141,6 +159,8 @@
 			children = (
 				E2414A3E2B9D84D2008835C2 /* HomeViewModel.swift */,
 				E25747012B9E9D0200B5D9D6 /* ChapterDetailsViewModel.swift */,
+				E257470D2B9EE19200B5D9D6 /* VersesListViewModel.swift */,
+				E257471D2B9EF07800B5D9D6 /* VersePO.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -151,6 +171,7 @@
 				E2414A402B9D87E1008835C2 /* Chapter.swift */,
 				E25747032B9E9D8700B5D9D6 /* ChapterDetail.swift */,
 				E25747092B9EB3C300B5D9D6 /* ChapterDetailPO.swift */,
+				E257470F2B9EE42100B5D9D6 /* Verse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +218,12 @@
 				E2574C672B9DD9F700739351 /* HomeTableViewCell.xib */,
 				E25747052B9EB16600B5D9D6 /* ChapterDeatailHeadingTableViewCell.swift */,
 				E25747062B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib */,
+				E25747112B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.swift */,
+				E25747122B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.xib */,
+				E25747152B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.swift */,
+				E25747162B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.xib */,
+				E25747192B9EEB8600B5D9D6 /* VerseTableViewCell.swift */,
+				E257471A2B9EEB8600B5D9D6 /* VerseTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -365,6 +392,9 @@
 				E25747082B9EB16600B5D9D6 /* ChapterDetailHeadingTableViewCell.xib in Resources */,
 				E2574C692B9DD9F700739351 /* HomeTableViewCell.xib in Resources */,
 				E22AF6592B9D8414005EF18C /* chapters.json in Resources */,
+				E257471C2B9EEB8600B5D9D6 /* VerseTableViewCell.xib in Resources */,
+				E25747182B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.xib in Resources */,
+				E25747142B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,8 +421,12 @@
 			files = (
 				E2DC09CE2B9D6745005F42CC /* ViewController.swift in Sources */,
 				E25747022B9E9D0200B5D9D6 /* ChapterDetailsViewModel.swift in Sources */,
+				E25747172B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.swift in Sources */,
+				E25747132B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.swift in Sources */,
 				E2414A442B9D8C6D008835C2 /* commonFunctions.swift in Sources */,
+				E25747102B9EE42100B5D9D6 /* Verse.swift in Sources */,
 				E2DC09CA2B9D6745005F42CC /* AppDelegate.swift in Sources */,
+				E257470E2B9EE19200B5D9D6 /* VersesListViewModel.swift in Sources */,
 				E2574C6B2B9DDDF600739351 /* Subscript.swift in Sources */,
 				E2DC09D42B9D6745005F42CC /* Gita.xcdatamodeld in Sources */,
 				E25747042B9E9D8700B5D9D6 /* ChapterDetail.swift in Sources */,
@@ -404,6 +438,8 @@
 				E257470C2B9EE07100B5D9D6 /* VersesListViewController.swift in Sources */,
 				E2414A3F2B9D84D2008835C2 /* HomeViewModel.swift in Sources */,
 				E2574C6D2B9DF48800739351 /* ChapterDetailsViewController.swift in Sources */,
+				E257471B2B9EEB8600B5D9D6 /* VerseTableViewCell.swift in Sources */,
+				E257471E2B9EF07800B5D9D6 /* VersePO.swift in Sources */,
 				E2DC09CC2B9D6745005F42CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

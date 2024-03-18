@@ -74,16 +74,25 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="WtJ-M6-GAx">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oXA-lP-rsp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="abk-ha-PAH" firstAttribute="top" secondItem="oXA-lP-rsp" secondAttribute="top" id="KoM-zW-WUe"/>
+                            <constraint firstItem="WtJ-M6-GAx" firstAttribute="centerY" secondItem="A1o-wb-WIn" secondAttribute="centerY" id="WVM-pt-ssI"/>
+                            <constraint firstItem="WtJ-M6-GAx" firstAttribute="centerX" secondItem="A1o-wb-WIn" secondAttribute="centerX" id="a2o-Yt-ZHm"/>
                             <constraint firstItem="abk-ha-PAH" firstAttribute="leading" secondItem="oXA-lP-rsp" secondAttribute="leading" id="gXg-OI-lCb"/>
                             <constraint firstItem="oXA-lP-rsp" firstAttribute="trailing" secondItem="abk-ha-PAH" secondAttribute="trailing" id="lmK-TC-70f"/>
                             <constraint firstItem="oXA-lP-rsp" firstAttribute="bottom" secondItem="abk-ha-PAH" secondAttribute="bottom" id="s1p-BF-K9v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="WtJ-M6-GAx" id="jr8-Wo-eJu"/>
+                        <outlet property="tableView" destination="abk-ha-PAH" id="dzM-ba-2qT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBc-gv-6RG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
