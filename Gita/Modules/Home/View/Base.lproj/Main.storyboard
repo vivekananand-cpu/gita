@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pxo-5X-1l0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -101,7 +101,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2hL-Cw-ThA">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pxo-5X-1l0" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Pxo-5X-1l0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XWp-5E-ksJ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

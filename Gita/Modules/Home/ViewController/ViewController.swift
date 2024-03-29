@@ -6,18 +6,40 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var viewModel = HomeViewModel()
-
+    var handle: AuthStateDidChangeListenerHandle? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupTableView()
         viewModelSetup()
         self.viewModel.performApiCallGetAllChapters()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handle = Auth.auth().addStateDidChangeListener({ auth, user in
+            if let user {
+                
+            } else {
+                
+            }
+        })
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if let handle {
+            Auth.auth().removeStateDidChangeListener(handle)
+        }
+    }
+    
+    func redirectToLogin() {
+        
     }
     
     func setupView() {
