@@ -39,18 +39,46 @@ class HomeViewController: UIViewController {
     }
     
     func redirectToLogin() {
+        let loginVC = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: String(describing: LoginViewController.self))
+        let loginNavVC = UINavigationController(rootViewController: loginVC)
         
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {return}
+
+                // Set it as the window's root view controller
+                let window = UIWindow(windowScene: windowScene)
+                window.rootViewController = loginNavVC
+                window.makeKeyAndVisible()
     }
     
     func setupView() {
         self.title = "Chapters"
         navigationController?.navigationBar.prefersLargeTitles = true
+        setupNavigationBar()
     }
     
     func setupTableView() {
         self.tableView.dataSource = self
         self.tableView.delegate   = self
         self.tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
+    }
+    
+    func setupNavigationBar() {
+        let buttonLogout = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handlerLogout))
+        buttonLogout.tintColor = .red
+        navigationItem.rightBarButtonItem = buttonLogout
+    }
+    
+    @objc func handlerLogout() {
+        do {
+            self.startLoading()
+            try Auth.auth().signOut()
+            self.stopLoading()
+            redirectToLogin()
+        } catch {
+            self.stopLoading()
+            print(error)
+        }
+        
     }
     
     func startLoading() {

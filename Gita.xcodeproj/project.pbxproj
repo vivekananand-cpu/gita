@@ -48,6 +48,7 @@
 		E2DC09E42B9D6746005F42CC /* GitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09E32B9D6746005F42CC /* GitaTests.swift */; };
 		E2DC09EE2B9D6746005F42CC /* GitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09ED2B9D6746005F42CC /* GitaUITests.swift */; };
 		E2DC09F02B9D6746005F42CC /* GitaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC09EF2B9D6746005F42CC /* GitaUITestsLaunchTests.swift */; };
+		E2FE2DCF2BB9646C009501B3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE2DCE2BB9646C009501B3 /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		E2DC09E92B9D6746005F42CC /* GitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DC09ED2B9D6746005F42CC /* GitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitaUITests.swift; sourceTree = "<group>"; };
 		E2DC09EF2B9D6746005F42CC /* GitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2FE2DCE2BB9646C009501B3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 		E2DC09C82B9D6745005F42CC /* Gita */ = {
 			isa = PBXGroup;
 			children = (
+				E2FE2DCD2BB96454009501B3 /* Utility */,
 				E262318D2BB11F0200F0014F /* GoogleService-Info.plist */,
 				E2414A452B9D91B7008835C2 /* DataMediator */,
 				E2414A422B9D8C49008835C2 /* Common */,
@@ -330,6 +333,14 @@
 				E2DC09EF2B9D6746005F42CC /* GitaUITestsLaunchTests.swift */,
 			);
 			path = GitaUITests;
+			sourceTree = "<group>";
+		};
+		E2FE2DCD2BB96454009501B3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE2DCE2BB9646C009501B3 /* TextField.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +494,7 @@
 				E25747172B9EEB7A00B5D9D6 /* VerseTitleTableViewCell.swift in Sources */,
 				E25747132B9EEB6B00B5D9D6 /* VerseHeaderTableViewCell.swift in Sources */,
 				E2414A442B9D8C6D008835C2 /* commonFunctions.swift in Sources */,
+				E2FE2DCF2BB9646C009501B3 /* TextField.swift in Sources */,
 				E25747102B9EE42100B5D9D6 /* Verse.swift in Sources */,
 				E262319D2BB1A3D600F0014F /* SignUpViewController.swift in Sources */,
 				E2DC09CA2B9D6745005F42CC /* AppDelegate.swift in Sources */,
