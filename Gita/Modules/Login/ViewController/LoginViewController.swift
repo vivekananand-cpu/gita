@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var buttonLogin: LoginButton!
     @IBOutlet weak var textFieldEmail: UnderLineTextField!
+    
+    var viewModel: AuthViewModel = AuthViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -27,28 +29,38 @@ class LoginViewController: UIViewController {
     
     func setupView() {
         textFieldPassword.isSecureTextEntry = true
+        textFieldPassword.delegate = self
+        textFieldEmail.delegate = self
+        buttonLogin.isEnabled = false
     }
     
     @IBAction func buttonHandlerLogin(_ sender: Any) {
+        self.view.endEditing(true)
         let email = textFieldEmail.text
         let password = textFieldPassword.text
         
         if let email, !email.isEmpty, let password, !password.isEmpty {
-            self.buttonLogin.isHidden = true
-            self.startIndicator(indicator: activityIndicator)
-            Auth.auth().signIn(withEmail: email, password: password) {[weak self]
-                result, error in
-                guard let strongSelf = self else {return}
-                strongSelf.stopIndicator(indicator: strongSelf.activityIndicator)
-                if let error {
-                    self?.buttonLogin.isHidden = false
-                    strongSelf.showAlert(message: error.localizedDescription)
-                } else {
-                    strongSelf.navigateToHomeViewController()
+            if self.viewModel.isValidEmail(email) {
+                self.buttonLogin.isHidden = true
+                self.startIndicator(indicator: activityIndicator)
+                Auth.auth().signIn(withEmail: email, password: password) {[weak self]
+                    result, error in
+                    guard let strongSelf = self else {return}
+                    strongSelf.stopIndicator(indicator: strongSelf.activityIndicator)
+                    if let error {
+                        self?.buttonLogin.isHidden = false
+                        strongSelf.showAlert(message: error.localizedDescription)
+                    } else {
+                        strongSelf.navigateToHomeViewController()
+                    }
                 }
+            } else {
+                self.showAlert(message: "Please enter valid email.")
             }
         } else {
             self.showAlert(message: "Please fill all the fields.")
+            self.textFieldEmail.showError()
+            self.textFieldPassword.showError()
         }
     }
     
@@ -65,10 +77,31 @@ class LoginViewController: UIViewController {
         
         self.navigationController?.pushViewController(homeVC, animated: true)
     }
-    
-    
-    
-       
-    
-    
+}
+
+
+extension LoginViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == textFieldPassword {
+            guard let password = self.textFieldPassword.text else {return true}
+            if self.viewModel.isValidPassword(password) {
+                self.textFieldPassword.removeError()
+                if let email = self.textFieldEmail.text, !email.isEmpty {
+                    self.buttonLogin.isEnabled = true
+                }
+            } else {
+                self.textFieldPassword.showError()
+                self.buttonLogin.isEnabled = false
+            }
+        } else if textField == textFieldEmail {
+            guard let email = self.textFieldEmail.text else {return true}
+            if self.viewModel.isValidEmail(email) {
+                self.textFieldEmail.removeError()
+            } else {
+                self.textFieldEmail.showError()
+            }
+        }
+        
+        return true
+    }
 }

@@ -38,4 +38,12 @@ class UnderLineTextField: UITextField {
         // Set the frame for the underline layer
         underlineLayer.frame = CGRect(x: 0, y: frame.size.height - 1, width: frame.size.width, height: 0.5)
     }
+    
+    func showError() {
+        self.underlineLayer.backgroundColor = UIColor.red.cgColor
+    }
+    
+    func removeError() {
+        underlineLayer.backgroundColor = UIColor.gray.cgColor
+    }
 }
