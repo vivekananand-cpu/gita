@@ -12,17 +12,21 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var textFieldPassword: UnderLineTextField!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var buttonLogin: LoginButton!
     @IBOutlet weak var textFieldEmail: UnderLineTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.buttonLogin.isHidden = false
         
+    }
+    
+    func setupView() {
+        textFieldPassword.isSecureTextEntry = true
     }
     
     @IBAction func buttonHandlerLogin(_ sender: Any) {

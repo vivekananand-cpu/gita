@@ -10,7 +10,7 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var buttonSignup: UIButton!
+    @IBOutlet weak var buttonSignup: LoginButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var textFieldPassword: UnderLineTextField!
     @IBOutlet weak var textFieldConfirmPassword: UnderLineTextField!
@@ -18,7 +18,12 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        setupView()
+    }
+    
+    func setupView() {
+        textFieldPassword.isSecureTextEntry = true
+        textFieldConfirmPassword.isSecureTextEntry = true
     }
     
     @IBAction func buttonHandlerSignup(_ sender: UIButton) {
@@ -52,6 +57,9 @@ class SignUpViewController: UIViewController {
         self.navigationController?.pushViewController(homeVC, animated: true)
     }
     
-   
+    @IBAction func buttonHandlerLogin(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 
 }
